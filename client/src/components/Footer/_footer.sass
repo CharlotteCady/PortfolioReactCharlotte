@@ -1,0 +1,26 @@
+@import 'assets/styles/variable.sass'
+
+footer
+	margin-top: -40px;
+	height: 40px;
+	grid-area: footer
+	background: darken($color1, 10%)
+	opacity: 0.8
+	display: flex
+	justify-content: center
+	p
+		align-self: center
+		color: white
+		font-weight: 300
+		text-transform: uppercase
+		letter-spacing: 0.5rem
+		font-size: 10px
+		position: relative
+		&:after
+			content: url('/image/love.svg')
+			position: absolute
+			right: -20px
+			top: -3px
+			height: 20px
+			width: 20px
+			z-index: 1

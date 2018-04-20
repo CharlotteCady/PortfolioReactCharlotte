@@ -1,0 +1,42 @@
+@import 'assets/styles/variable.sass'
+
+.nav
+	// grid-area: nav
+	display: flex
+	align-items: center
+	justify-content: center
+	height: $nav-height
+	background-color: transparent
+	z-index: 3
+	color: white
+	position: sticky
+	&.scrolled
+		top: 0
+		background-color: white
+		color: black
+		box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.2)
+		transition: background-color 200ms linear
+
+	ul
+		li
+			display: inline-block
+			padding: 0 20px
+		a
+			position: relative
+			.after
+				content: ""
+				position: absolute
+				bottom: -2px
+				left: 0
+				width: 0
+				height: 3px
+				border-radius: 4px
+				display: inline-block
+				transition: width 0.2s ease-in-out
+		li:hover
+			.after
+				width: 100%
+
+@media (min-width: $sm-min-width)
+	.nav
+		justify-content: flex-end

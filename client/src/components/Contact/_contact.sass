@@ -1,0 +1,81 @@
+@import 'assets/styles/variable.sass'
+@import 'assets/styles/mixins/grid.sass'
+
+.contact
+	// background: $color1
+	color: white
+	z-index: 0
+	display: flex
+	-ms-flex-pack: center
+	justify-content: center
+	text-align: center
+	align-items: center
+	position: relative
+	.particles
+		z-index: -1
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+	.contact-block
+		width: 80%
+		// margin: auto
+		display: flex
+		flex-direction: column
+		.h3
+			margin: auto
+			margin-bottom: 2rem
+			.before
+				transform: translateX(-50%)
+				left: 50%
+		p
+			font-size: 16px
+		.form-container
+			z-index: 0
+			.messageForm
+				background-color: $white
+				color: $black
+				margin-bottom: 1rem
+				opacity: 0.8
+				font-size: 16px
+				padding: 0 1rem
+			form
+				z-index: 10
+				textarea
+					height: 6rem
+					display: block
+					width: 100%
+				input, textarea
+					margin-bottom: 1%
+					border: none
+					font-size: 14px
+					padding: 0.5rem
+				input
+					width: 49.5%
+					display: inline-block
+					height: 2rem
+				input:first-child
+					margin-right: 1%
+				input
+					height: 2.5rem
+				.btn
+					margin-top: 1rem
+					font-size: 1rem
+
+@media (min-width: $sm-min-width)
+	.contact
+		.contact-block
+			width: 70%
+			p
+				font-size: 20px
+				font-weight: 300
+				padding: 2rem 0
+
+@media (min-width: $md-min-width)
+	.contact
+		.contact-block
+			width: 50%
+
+// Effet sympa pour le formulaire de contact
+// https://medium.freecodecamp.org/text-input-highlight-tripadvisor-style-2a44477de1b2

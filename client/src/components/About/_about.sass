@@ -1,0 +1,38 @@
+@import 'assets/styles/variable.sass'
+@import 'assets/styles/mixins/grid.sass'
+
+.about
+	// grid-area: about
+	display: flex
+	flex-direction: column
+	background-color: white
+	box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.2)
+	text-align: left
+	z-index: 2
+	.content
+		display: -ms-grid
+		display: grid
+		-ms-grid-columns: 1fr
+		grid-template-columns: 1fr
+		p
+			margin-bottom: 1.5rem
+			line-height: 1.8rem
+			svg
+				vertical-align: middle
+			a
+				vertical-align: middle
+				padding-left: 1rem
+				text-decoration: underline
+
+@media (min-width: $sm-min-width)
+	.about
+		.content
+			-ms-grid-columns: 1fr 1fr
+			grid-template-columns: 1fr 1fr
+			// grid-gap: 3rem
+			.col-1
+				+grid-child(1,2,1,2)
+				padding-right: 2rem
+			.col-2
+				+grid-child(2,3,1,2)
+				padding-right: 2rem

@@ -1,0 +1,67 @@
+@import 'assets/styles/variable.sass'
+@import 'assets/styles/mixins/grid.sass'
+
+*:before, *:after
+	z-index: -1
+
+#app
+	display: -ms-grid
+	-ms-grid-columns: 100%
+	-ms-grid-rows: 50px 100vh auto auto auto 100vh
+	display: grid
+	grid-template-columns: 100%
+	grid-template-rows: 50px 100vh auto auto auto 100vh
+	// grid-template-areas: "nav" "banner" "about" "skills" "projects" "contact"
+	.nav
+		+grid-child(1,2,1,2)
+	.banner
+		+grid-child(1,2,2,3)
+	.about
+		+grid-child(1,2,3,4)
+	.skills
+		+grid-child(1,2,4,5)
+	.projects
+		+grid-child(1,2,5,6)
+	.contact
+		+grid-child(1,2,6,7)
+
+
+.about, .contact, .bg
+	padding: ($space-y / 2) ($space-x / 2)
+
+
+@media (min-width: $sm-min-width)
+	#app
+		-ms-grid-columns: 1fr
+		-ms-grid-rows: 50px 100vh auto auto auto auto
+		grid-template-columns: 1fr
+		grid-template-rows: 50px 100vh auto auto auto auto
+		// grid-template-areas: "nav nav" "banner banner" "about about" "skills skills" "projects projects" "contact contact"
+
+	.nav
+		padding: 0 $space-x
+	.about, .contact, .bg
+		padding: 3rem 2rem
+
+
+@media (min-width: $md-min-width)
+	#app
+		-ms-grid-columns: 1fr 1fr
+		-ms-grid-rows: 50px 100vh auto auto 100vh
+		grid-template-columns: 1fr 1fr
+		grid-template-rows: 50px 100vh auto auto 100vh
+		// grid-template-areas: "nav nav" "banner banner" "about skills" "projects projects" "contact contact"
+		.nav
+			+grid-child(1,3,1,2)
+		.banner
+			+grid-child(1,3,2,3)
+		.about
+			+grid-child(1,2,3,4)
+		.skills
+			+grid-child(2,3,3,4)
+		.projects
+			+grid-child(1,3,4,5)
+		.contact
+			+grid-child(1,3,5,6)
+	.about, .contact, .bg
+		padding: 5rem 3rem
