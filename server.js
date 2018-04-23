@@ -1,5 +1,4 @@
  // Package import
-const redirectSSL = require('redirect-ssl')
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -13,7 +12,6 @@ const Contact = require('./formModel');
 
 // Init variable
 const app = express();
-app.use(redirectSSL);
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 let transporter = nodemailer.createTransport({
