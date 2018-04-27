@@ -5,7 +5,7 @@ import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+// registerServiceWorker();
 
 // import React from 'react';
 // import { hydrate, render } from 'react-dom';
