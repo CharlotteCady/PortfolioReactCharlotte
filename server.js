@@ -13,8 +13,9 @@ const Contact = require('./formModel');
 
 // Init variable
 const app = express();
-app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(sslRedirect(['production'], 301));
+
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 let transporter = nodemailer.createTransport({
   service: 'gmail',
