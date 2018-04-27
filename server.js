@@ -144,3 +144,11 @@ app.get('*', (req, res) => {
 
 const port = process.env.PORT || 5000;
 app.listen(port);
+
+// redirection http vers https
+if (port !== 5000) {
+  app.use('/', (req, res, next) => {
+    var reqType = req.headers["x-forwarded-proto"];
+    reqType == 'https' ? next() : res.redirect("https://" + req.headers.host + req.url);
+  });
+}
