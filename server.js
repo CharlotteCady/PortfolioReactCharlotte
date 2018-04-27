@@ -1,4 +1,5 @@
  // Package import
+const sslRedirect = require('heroku-ssl-redirect');
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -13,6 +14,7 @@ const Contact = require('./formModel');
 // Init variable
 const app = express();
 app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(sslRedirect(['production'], 301));
 
 let transporter = nodemailer.createTransport({
   service: 'gmail',
