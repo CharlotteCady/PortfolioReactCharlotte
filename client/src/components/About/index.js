@@ -55,7 +55,7 @@ const About = ({ colors }) => {
                 <path d="M17.551,15.777c-1.368,0-2.264,0.898-2.264,2.08c0,1.155,0.869,2.08,2.211,2.08h0.026c1.396,0,2.265-0.925,2.265-2.08C19.762,16.676,18.921,15.777,17.551,15.777z"/>
               </g>
             </svg>
-            <a href="http://www.linkedin.com/in/charlottecady/" target="_blank" rel="noopener noreferrer">My Linkedin Profile</a>
+            <a href="https://www.linkedin.com/in/charlottecady/?locale=en_US" target="_blank" rel="noopener noreferrer">My Linkedin Profile</a>
           </p>
         </div>
     	</div>

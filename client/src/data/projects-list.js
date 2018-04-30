@@ -9,7 +9,7 @@ const projectsList = [
 	{
 		id: 1,
 		name: 'Battlerite Pro',
-		site: 'https://www.battlerite-pro.com/',
+		site: '#',
 		picture: battlerite,
 		description: 'Battlerite Pro provides game stats to help players to improve their performance. I fully designed the website and developed the front-end.',
 		techno: ['React', 'Express JS', 'MongoDB', 'Flexbox', 'Bootstrap', 'HTML 5', 'SASS']
