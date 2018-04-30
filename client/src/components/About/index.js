@@ -20,7 +20,7 @@ const About = ({ colors }) => {
     		<div className="col-1">
           <p>
             Hey, I’m {age} years old, from France.
-            I’m a front-end developer who loves to combine user experiences, design and coding.
+            I’m a Front-end Developer who loves to combine user experiences, design and coding.
           </p>
           <p>
             My passion for web development started when I was a fundraising consultant for startups.
@@ -36,7 +36,7 @@ const About = ({ colors }) => {
         </div>
         <div className="col-2">
           <p>
-            For a bigger challenge (and sun), my boyfriend and I have left Paris for
+            For a bigger challenge (and sun), my partner and I have left Paris for
             Sydney to experience the freelance lifestyle. We have been working on a MERN
             (MongoDB, Express JS, React JS, Node JS) Stack project.
           </p>
@@ -45,7 +45,7 @@ const About = ({ colors }) => {
             traveling around the world, and sharing a drink.
           </p>
           <p>
-            If you’d like to talk about code, foosball, French stuff or anything else, feel free to contact me :)
+            If you’d like to talk about coding, foosball, French stuffs or anything else, feel free to contact me :)
           </p>
           <p>
             <svg version="1.1" className="linkedin" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 49.652 49.652">

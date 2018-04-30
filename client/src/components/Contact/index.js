@@ -127,8 +127,8 @@ const Contact = ({colors}) => {
 			<div className="contact-block">
 				<HeaderTitle content='Contact' className='h3' colors={colors}/>
 				<p className="content">
-					Hey, <br/>If you’d like to talk about code, foosball,
-					<br/>French stuff or anything else, feel free to contact me :)
+					Hey, <br/>If you’d like to talk about coding, foosball,
+					<br/>French stuffs or anything else, feel free to contact me :)
 				</p>
 				<Form colors={colors}/>
 			</div>

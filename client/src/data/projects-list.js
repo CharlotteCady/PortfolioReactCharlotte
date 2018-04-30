@@ -35,7 +35,7 @@ const projectsList = [
 		name: 'Cardiweb',
 		site: 'https://www.cardiweb.com/',
 		picture: cardiweb,
-		description: 'Cardiweb is a parisian digital agency. I fully redesigned his website based on a custom template' ,
+		description: 'Cardiweb is a digital agency in Paris. I fully redesigned his website based on a custom template' ,
 		techno: ['Bootstrap', 'HTML 5', 'CSS 3']
 	},{
 		id: 5,
