@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const axios = require('axios');
 const mongoose = require('mongoose');
-const sslRedirect = require('heroku-ssl-redirect');
+// const sslRedirect = require('heroku-ssl-redirect');
 require('dotenv').config();
 const nodemailer = require('nodemailer');
 
@@ -13,7 +13,7 @@ const Contact = require('./formModel');
 
 // Init variable
 const app = express();
-app.use(sslRedirect());
+// app.use(sslRedirect());
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
