@@ -2,7 +2,6 @@
   "name": "portfolio-crae",
   "version": "0.0.0",
   "main": "server.js",
-  "homepage": "https://www.charlotte-cady.com/",
   "author": "Charlotte Cady",
   "private": true,
   "scripts": {
